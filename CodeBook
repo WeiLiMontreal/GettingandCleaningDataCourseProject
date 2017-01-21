@@ -1,0 +1,98 @@
+I Information source to creat the required data set
+
+1. Subject
+The observations for all subjects for both training and test come from the file: 
+file_subject_train = "./UCI HAR Dataset/train/subject_train.txt"
+file_subject_test = "./UCI HAR Dataset/test/subject_test.txt"
+
+2. Activity 
+The ativity expressioin and labels come from the file:
+file_activity_labels="./UCI HAR Dataset/activity_labels.txt"
+
+The observations of all activities for all measurements for both training and test come from:
+file_activity_label_train = "./UCI HAR Dataset/train/y_train.txt"
+file_activity_label_test = "./UCI HAR Dataset/test/y_test.txt"
+
+3. Only on the mean and standard deviation for each measurement. 
+The information was extracted from V2 of the file:
+file_features = "./UCI HAR Dataset/features.txt". Those measurment names are kept.
+
+The observations for all measurements for both training and test came from 
+file_data_train = "./UCI HAR Dataset/train/X_train.txt"
+file_data_test  = "./UCI HAR Dataset/test/X_test.txt"
+
+II The variables of the data set we need to create are: subject, activity name, and a set of measurements.
+ [1] subject                    
+ [2] activity                   
+ [3] tBodyAcc-mean()-X          
+ [4] tBodyAcc-mean()-Y          
+ [5] tBodyAcc-mean()-Z          
+ [6] tBodyAcc-std()-X           
+ [7] tBodyAcc-std()-Y           
+ [8] tBodyAcc-std()-Z           
+ [9] tGravityAcc-mean()-X       
+[10] tGravityAcc-mean()-Y       
+[11] tGravityAcc-mean()-Z       
+[12] tGravityAcc-std()-X        
+[13] tGravityAcc-std()-Y        
+[14] tGravityAcc-std()-Z        
+[15] tBodyAccJerk-mean()-X      
+[16] tBodyAccJerk-mean()-Y      
+[17] tBodyAccJerk-mean()-Z      
+[18] tBodyAccJerk-std()-X       
+[19] tBodyAccJerk-std()-Y       
+[20] tBodyAccJerk-std()-Z       
+[21] tBodyGyro-mean()-X         
+[22] tBodyGyro-mean()-Y         
+[23] tBodyGyro-mean()-Z         
+[24] tBodyGyro-std()-X          
+[25] tBodyGyro-std()-Y          
+[26] tBodyGyro-std()-Z          
+[27] tBodyGyroJerk-mean()-X     
+[28] tBodyGyroJerk-mean()-Y     
+[29] tBodyGyroJerk-mean()-Z     
+[30] tBodyGyroJerk-std()-X      
+[31] tBodyGyroJerk-std()-Y      
+[32] tBodyGyroJerk-std()-Z      
+[33] tBodyAccMag-mean()         
+[34] tBodyAccMag-std()          
+[35] tGravityAccMag-mean()      
+[36] tGravityAccMag-std()       
+[37] tBodyAccJerkMag-mean()     
+[38] tBodyAccJerkMag-std()      
+[39] tBodyGyroMag-mean()        
+[40] tBodyGyroMag-std()         
+[41] tBodyGyroJerkMag-mean()    
+[42] tBodyGyroJerkMag-std()     
+[43] fBodyAcc-mean()-X          
+[44] fBodyAcc-mean()-Y          
+[45] fBodyAcc-mean()-Z          
+[46] fBodyAcc-std()-X           
+[47] fBodyAcc-std()-Y           
+[48] fBodyAcc-std()-Z           
+[49] fBodyAccJerk-mean()-X      
+[50] fBodyAccJerk-mean()-Y      
+[51] fBodyAccJerk-mean()-Z      
+[52] fBodyAccJerk-std()-X       
+[53] fBodyAccJerk-std()-Y       
+[54] fBodyAccJerk-std()-Z       
+[55] fBodyGyro-mean()-X         
+[56] fBodyGyro-mean()-Y         
+[57] fBodyGyro-mean()-Z         
+[58] fBodyGyro-std()-X          
+[59] fBodyGyro-std()-Y          
+[60] fBodyGyro-std()-Z          
+[61] fBodyAccMag-mean()         
+[62] fBodyAccMag-std()          
+[63] fBodyBodyAccJerkMag-mean() 
+[64] fBodyBodyAccJerkMag-std()  
+[65] fBodyBodyGyroMag-mean()    
+[66] fBodyBodyGyroMag-std()     
+[67] fBodyBodyGyroJerkMag-mean()
+[68] fBodyBodyGyroJerkMag-std() 
+
+III The tidy data
+The first order of the didy data set is that the subject column is sorted by default ascending order from 1 to 30. The seconder order is that for each subject the activity column is sorted by default ascending order based on the activity labels from 1 to 6, not based on the letters of activity name words. 
+
+IV write the data set to txt file. 
+To simplify, all characters are shown without quote.
