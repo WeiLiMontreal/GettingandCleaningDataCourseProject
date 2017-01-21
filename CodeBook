@@ -1,4 +1,7 @@
-I Information source to creat the required data set
+Code book
+
+I Information about source files to creat the required data set
+After analysing which variables are required, the following files are needed for this project.
 
 1. Subject
 The observations for all subjects for both training and test come from the file: 
