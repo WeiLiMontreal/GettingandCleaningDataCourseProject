@@ -99,7 +99,7 @@ III The tidy data
 The first order of the didy data set is that the subject column is sorted by default ascending order from 1 to 30. 
 The seconder order is that for each subject the activity column is sorted by default ascending order based on the 
 activity labels from 1 to 6, not based on the letters of activity name words. Each observation data in the tidy data 
-set from column 3 to 68 is the averages for each meansurement.
+set from column 3 to 68 is the averages of the meansurements for each activity of each subject.
 
 IV write the data set to txt file. 
 To simplify, all characters are shown without quote.
