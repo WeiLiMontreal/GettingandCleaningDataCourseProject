@@ -18,7 +18,8 @@ file_activity_label_test = "./UCI HAR Dataset/test/y_test.txt"
 
 3. Only on the mean and standard deviation for each measurement. 
 The information was extracted from V2 of the file:
-file_features = "./UCI HAR Dataset/features.txt". Those measurment names are kept.
+file_features = "./UCI HAR Dataset/features.txt". 
+Those measurment names, units are kept as same as explination in the source files 
 
 The observations for all measurements for both training and test came from 
 file_data_train = "./UCI HAR Dataset/train/X_train.txt"
@@ -95,7 +96,10 @@ II The variables of the data set we need to create are: subject, activity name, 
 [68] fBodyBodyGyroJerkMag-std() 
 
 III The tidy data
-The first order of the didy data set is that the subject column is sorted by default ascending order from 1 to 30. The seconder order is that for each subject the activity column is sorted by default ascending order based on the activity labels from 1 to 6, not based on the letters of activity name words. 
+The first order of the didy data set is that the subject column is sorted by default ascending order from 1 to 30. 
+The seconder order is that for each subject the activity column is sorted by default ascending order based on the 
+activity labels from 1 to 6, not based on the letters of activity name words. Each observation data in the tidy data 
+set from column 3 to 68 is the averages for each meansurement.
 
 IV write the data set to txt file. 
 To simplify, all characters are shown without quote.
